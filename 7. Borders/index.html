@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Borders</title>
+  </head>
+  <body>
+    <!-- Border Width & Colors -->
+    <!-- https://tailwindcss.com/docs/border-width -->
+   
+    <div class="border-2 border-cyan-600 m-10 p-3"> Borders
+      <div class="w-96 m-3 p-5 border">Border All Around</div>
+      <div class="w-96 m-3 p-5 border border-2">Border Width</div>
+      <div class="w-96 m-3 p-5 border-4 border-green-500">Colord Border</div>
+      <div class="w-96 m-3 p-5 border-x-2 border-yellow-300">
+        Border Applied To X Axis</div>
+
+        <div class="w-96 m-3 p-5 border-y-2 border-teal-500">
+          Border Applied To Y Axies
+        </div>
+        <div class="w-96 m-3 p-5 border-r-2 border-teal-500">Border Right</div>
+        <div class="w-96 m-3 p-5 border-l-2 border-teal-500">Border Left</div>
+        <div class="w-96 m-3 p-5 border-b-2 border-teal-500">Border Bottom</div>
+        <div class="w-96 m-3 p-5 border-t-2 border-teal-500">Border Top</div>
+      </div>
+    </div>
+
+    <!-- Border Radius -->
+    <!-- https://tailwindcss.com/docs/border-radius -->
+
+    <div class="border-4 border-yellow-200 m-10 p-3">Border Radius
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-sm">
+        Border Rounded sm (2px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded">
+        Border Rounded (4px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-md">
+        Border Rounded md (6px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-lg">
+        Border Rounded lg (8px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-xl">
+        Border Rounded xl (12px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-2xl">
+        Border Rounded 2xl (16px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-3xl">
+        Border Rounded 3xl (24px)</div>
+      <div class="w-96 m-3 p-5 bg-orange-500 rounded-full">
+        Border Rounded full (9999px)</div>
+    </div>
+
+    <!-- Specific Sides -->
+    <div class="border-4 border-red-400 m-10 p-3">
+      Specific Sides
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-t-md">
+        Border Top Rounded
+      </div>
+      <div class="w-96 m-3 p-5 bg-teal-200 m-10 rounded-b-lg">
+        Border Bottom Rounded
+      </div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-r-xl">
+        Border Right Rounded
+      </div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-l-2xl">
+        Border Left Rounded
+        </div>
+    </div>
+
+    <!-- Using Logical Properties -->
+    <div class="border-4 border-orange-200 m-10 p-3">
+      Using Logical Properties
+      <div class="w-96 m-3 p-5 bg-blue-200 rounded-s-2xl">
+        Round tl and bl corner (rounded-s) "start"
+      </div>
+      <div class="w-96 m-3 p-5 bg-blue-200 m-10 rounded-ss-2xl">
+        Round tl corner in l to r (rounded-ss) "start start"
+      </div>
+      <div class="w-96 m-3 p-5 bg-blue-200 rounded-se-2xl">
+       Round tr corner in r to l (rounded-se) "start end"
+      </div>
+      <div class="w-96 m-3 p-5 bg-blue-200 rounded-e-2xl">
+       Round tr and br corner (rounded-e) "end"
+        </div>
+      <div class="w-96 m-3 p-5 bg-blue-200 rounded-ee-2xl">
+        Round br corner in r to l (rounded-ee) "end end"
+        </div>
+      <div class="w-96 m-3 p-5 bg-blue-200 rounded-es-2xl">
+        Round bl in l to r (rounded-es) "end start"
+        </div>
+    </div>
+
+    </div>
+  </body>
+</html>
