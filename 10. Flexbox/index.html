@@ -12,12 +12,45 @@
     <!-- https://tailwindcss.com/docs/flex -->
     <div class="text-center">FLEX</div>
     <div class="border m-10">
+       <!-- flex-none: Prevent item from growing or shrinking -->
       <ul class="flex">
+        Flex-none
         <li class="bg-teal-100 m-5 p-5">01</li>
         <li class="bg-teal-100 m-5 p-5">02</li>
         <li class="bg-teal-100 m-5 p-5">03</li>
       </ul>
     </div>
+
+    <!-- flex-initial:  Allow item to shrink but not grow, based on its initial size  -->
+    <div class="border m-10">
+      <ul class="flex">
+        flex-initial
+        <li class="flex w-14 bg-teal-100 m-5 p-5">01</li>
+        <li class="flex-initial w-64 bg-teal-100 m-5 p-5">02</li>
+        <li class="flex-initial w-32 bg-teal-100 m-5 p-5">03</li>
+      </ul>
+    </div>
+
+  <!-- flex-auto: Allow item to grow and shrink, based on its initial size -->
+    <div class="border m-10">
+      <ul class="flex">
+        flex-auto
+        <li class="flex w-14 bg-teal-100 m-5 p-5">01</li>
+        <li class="flex-auto w-64 bg-teal-100 m-5 p-5">02</li>
+        <li class="flex-auto w-32 bg-teal-100 m-5 p-5">03</li>
+      </ul>
+    </div>
+
+     <!-- flex-1: Allow item to grow and shrink as needed, ignoring its initial size -->
+    <div class="border m-10">
+      <ul class="flex">
+        flex-1
+        <li class="flex w-14 bg-teal-100 m-5 p-5">01</li>
+        <li class="flex-1 w-64 bg-teal-100 m-5 p-5">02</li>
+        <li class="flex-1 w-32 bg-teal-100 m-5 p-5">03</li>
+      </ul>
+    </div>
+
 
       <!-- FLEX DIRECTION -->
     <!-- https://tailwindcss.com/docs/flex-direction#column -->
@@ -94,39 +127,126 @@
       </ul>
     </div>
 
-    <!-- <div class="border m-10">
-      Flex-stretch
-      <div class="flex flex-stretch">
-        <div class="bg-teal-100 m-5 p-5">01</div>
-        <div class="bg-teal-100 m-5 p-5">02</div>
-        <div class="bg-teal-100 m-5 p-5">03</div>
-      </div>
-    </div> -->
+    <div class="border m-10">
+      Flex items-stretch
+      <ul class="flex items-stretch">
+        <li class="flex-1 bg-teal-100 m-5 p-5">01</li>
+        <li class="flex-1 bg-teal-100 m-5 p-5">02</li>
+        <li class="flex-1 bg-teal-100 m-5 p-5">03</li>
+      </ul>
+    </div>
 
     
       <!-- JUSTIFY ITEMS -->
     <!-- https://tailwindcss.com/docs/justify-items -->
      <div class="text-center">JUSTIFY ITEMS</div>
-    <div class="border m-10">
-      Justify-start
-      <div class="border">
+      <div class="border m-10">
+        Justify-start
         <ul class="flex justify-start">
           <li class="bg-teal-100 m-5 p-5">01</li>
           <li class="bg-teal-100 m-5 p-5">02</li>
           <li class="bg-teal-100 m-5 p-5">03</li>
         </ul>
       </div>
-<!-- 
+
+      <div class="border m-10">
+        Justify-end
+        <ul class="flex justify-end">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+        </ul>
+      </div>
+
+      <div class="border m-10">
+        Justify-center
+        <ul class="flex justify-center">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+        </ul>
+      </div>
+
+      <div class="border m-10">
+        Justify-between
+        <ul class="flex justify-between">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+        </ul>
+      </div>
+
+      <div class="border m-10">
+        Justify-around
+        <ul class="flex justify-around">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+        </ul>
+      </div>
+
       <div class="border m-10">
         Jusify-stretch
-        <div class="grid justify-items-stretch">
-          <div class="bg-teal-100 m-5 p-5">01</div>
-          <div class="bg-teal-100 m-5 p-5">02</div>
-          <div class="bg-teal-100 m-5 p-5">03</div>
-        </div>
-      </div> -->
+        <ul class="grid grid-cols-3 justify-stretch">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+        </ul>
+      </div>
+      
+      <!-- ALIGN ITEMS -->
+     <!-- https://tailwindcss.com/docs/align-items -->
+     <div class="text-center">ALIGN ITEMS</div>
+     <p class="text-center pt-1">Items-start</p>
 
+     <!-- Use items-start to align items to the start of the container’s cross axis: -->
+     <div class="border m-10 h-[200px]">
+       <ul class="flex items-start">
+         <li class="bg-teal-100 m-5 p-5">01</li>
+         <li class="bg-teal-100 m-5 p-5">02</li>
+         <li class="bg-teal-100 m-5 p-5">03</li>
+       </ul>
+     </div>
 
+     <p class="text-center pt-1">Items-center</p>
+     <div class="border m-10 ">
+      <!-- Use items-center to align items along the center of the container’s cross axis: -->
+       <ul class="flex items-center">
+         <li class="bg-teal-100 m-5 p-4">01</li>
+         <li class="bg-teal-100 m-5 p-10">02</li>
+         <li class="bg-teal-100 m-5 p-8">03</li>
+       </ul>
+     </div>
+
+     <p class="text-center pt-1">Items-end</p>
+     <div class="border m-10 h-[145px]">
+       <ul class="flex items-end">
+        <!-- Use items-end to align items to the end of the container’s cross axis: -->
+         <li class="bg-teal-100 m-5 p-4">01</li>
+         <li class="bg-teal-100 m-5 p-12">02</li>
+         <li class="bg-teal-100 m-5 p-8">03</li>
+       </ul>
+     </div>
+
+     <!-- The baseline is typically the line which a text sit -->
+     <p class="text-center pt-1">Items-baseline</p>
+     <div class="border m-10 h-[200px]">
+       <ul class="flex items-baseline">
+        <!-- Use items-baseline to align items along the container’s cross axis such that all of their baselines align:-->
+         <li class="bg-teal-100 m-5 pt-2 pb-6 w-[50px]">01</li>
+         <li class="bg-teal-100 m-5 pt-8 pb-12 w-[100px]">02</li>
+         <li class="bg-teal-100 m-5 pt-12 pb-4 w-[70px]">03</li>
+       </ul>
+     </div>
+
+     <p class="text-center pt-1">Align items-stretch</p>
+     <div class="border m-10">
+      <ul class="flex items-stretch">
+        <li class="flex-1 bg-teal-100 m-5 p-5">01</li>
+        <li class="flex-1 bg-teal-100 m-5 p-5">02</li>
+        <li class="flex-1 bg-teal-100 m-5 p-5">03</li>
+      </ul>
+    </div>
 
     <!-- https://tailwindcss.com/docs/order -->
 
