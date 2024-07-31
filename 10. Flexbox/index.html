@@ -126,16 +126,6 @@
         <li class="bg-teal-100 m-5 p-5">05</li>
       </ul>
     </div>
-
-    <div class="border m-10">
-      Flex items-stretch
-      <ul class="flex items-stretch">
-        <li class="flex-1 bg-teal-100 m-5 p-5">01</li>
-        <li class="flex-1 bg-teal-100 m-5 p-5">02</li>
-        <li class="flex-1 bg-teal-100 m-5 p-5">03</li>
-      </ul>
-    </div>
-
     
       <!-- JUSTIFY ITEMS -->
     <!-- https://tailwindcss.com/docs/justify-items -->
@@ -250,7 +240,105 @@
 
     <!-- ALIGN CONTENT -->
     <!-- https://tailwindcss.com/docs/align-content -->
-    
+    <div class="text-center">ALIGN CONTENT</div>
+    <p class="text-center pt-1">content-normal</p>
+    <div class="border m-10">
+   <!--Use content-normal to pack content items in their default position as if no align-content value was set: -->
+      <ul class="h-[300px] grid grid-cols-3 gap-1 content-normal">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
+        <li class="bg-teal-100 m-5 p-5">04</li>
+        <li class="bg-teal-100 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <p class="text-center pt-1">content-start</p>
+    <div class="border m-10">
+   <!--Use content-start to pack rows in a container against the start of the cross axis: -->
+      <ul class="h-[300px] grid grid-cols-3 gap-1 content-start">
+
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
+        <li class="bg-teal-100 m-5 p-5">04</li>
+        <li class="bg-teal-100 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <p class="text-center pt-1">content-center</p>
+    <div class="border m-10">
+   <!--Use content-center to pack rows in a container in the center of the cross axis: -->
+      <ul class="h-[300px] grid grid-cols-3 gap-1 content-center">
+        
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
+        <li class="bg-teal-100 m-5 p-5">04</li>
+        <li class="bg-teal-100 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <p class="text-center pt-1">content-end</p>
+    <div class="border m-10">
+   <!-- Use content-end to pack rows in a container against the end of the cross axis: -->
+      <ul class="h-[300px] grid grid-cols-3 gap-1 content-end">
+        
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
+        <li class="bg-teal-100 m-5 p-5">04</li>
+        <li class="bg-teal-100 m-5 p-5">05</li>
+      </ul>
+    </div>
+      <p class="text-center pt-1">content-between</p>
+      <div class="border m-10">
+     <!-- Use content-between to distribute rows in a container such that there is an equal amount of space between each line: -->
+        <ul class="h-[300px] grid grid-cols-3 gap-1 content-between">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+     
+      <p class="text-center pt-1">content-around</p>
+      <div class="border m-10">
+        <!-- Use content-around to distribute rows in a container such that there is an equal amount of space around each line: -->
+        <ul class="h-[300px] grid grid-cols-3 gap-1 content-around">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+      
+      <p class="text-center pt-1">content-evenly</p>
+      <div class="border m-10">
+     <!--Use content-evenly to distribute rows in a container such that there is an equal amount of space around each item, but also accounting for the doubling of space you would normally see evenly each item when using content-around: -->
+        <ul class="h-[300px] grid grid-cols-3 gap-1 content-between">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+     
+      <p class="text-center pt-1">content-stretch</p>
+      <div class="border m-10">
+     <!-- Use content-stretch to allow content items to fill the available space along the container’s cross axis: -->
+        <ul class="h-[300px] grid grid-cols-3 gap-1 content-stretch">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+     
 
     <!-- ORDER -->
     <!-- https://tailwindcss.com/docs/order -->
@@ -263,11 +351,68 @@
         <li class="bg-teal-100 m-5 p-5 order-2">04</li>
         <li class="bg-teal-100 m-5 p-5 order-1">05</li>
         <li class="bg-teal-100 m-5 p-5 -order-1">06</li>
-        </div>
+      </ul>
+     </div>
+
+    <!-- FLEX GROW -->
+    <!-- https://tailwindcss.com/docs/flex-grow -->
+    <p class="text-center pt-1">FLEX GROW</p>
+
+    <!-- Use grow to allow a flex item to grow to fill any available space: -->
+    <div class="border m-10">
+      <p class="text-center pt-1">grow</p>
+      <ul class="flex">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="grow bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
       </ul>
 
-    <!-- Grow and shrink -->
+      <!-- Use grow-0 to prevent a flex item from growing: -->
+      <p class="text-center pt-1">grow-0</p>
+      <ul class="flex">
+        <li class=" grow bg-teal-100 m-5 p-5">01</li>
+        <li class="grow- bg-teal-100 m-5 p-5">02</li>
+        <li class="grow bg-teal-100 m-5 p-5">03</li>
+      </ul>
+     </div>
+
+    <!-- FLEX SHRINK -->
     <!-- https://tailwindcss.com/docs/flex-shrink -->
+    <p class="text-center pt-1">FLEX SHRINK</p>
+    <div class="border">
+      <!-- Use shrink to allow a flex item to shrink if needed: -->
+      <p class="text-center pt-1">shrink</p>
+
+    <div class="rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 text-white text-sm rounded-lg">
+        <div class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-teal-300 ">
+          01
+        </div>
+        <div class="p-4 w-64 shrink rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">
+          02
+        </div>
+        <div class="p-4 w-14 h-14 flex-none rounded-lg hidden sm:flex items-center justify-center bg-teal-300 ">
+          03
+        </div>
+      </div>
+  </div>
+  </div>
+  
+  <div class="border">
+    <!-- Use shrink-0 to prevent a flex item from shrinking: -->
+    <p class="text-center pt-1">shrink-0</p>
+
+    <div class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-stripes-blue rounded-lg">
+      <div class="p-4 flex-1 rounded-lg flex items-center justify-center bg-teal-300">
+        01
+      </div>
+      <div class="p-4 w-16 sm:w-64 shrink-0 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">
+        02
+      </div>
+      <div class="p-4 flex-1 rounded-lg hidden sm:flex items-center justify-center bg-teal-300">
+        03
+      </div>
+    </div>
 
   </body>
 </html>
