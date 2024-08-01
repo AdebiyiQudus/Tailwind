@@ -11,16 +11,137 @@
     <!-- Grid Template Columns -->
     <!-- https://tailwindcss.com/docs/grid-template-rows -->
     <p class="text-center">Grid Template Colums</p>
-    <div class="w-100 grid grid-cols-3 gap-4">
-      <div class="p-10 bg-green-200">01</div>
-      <div class="p-10 bg-green-200">02</div>
-      <div class="p-10 bg-green-200">03</div>
-      <div class="p-10 bg-green-200">04</div>
-      <div class="p-10 bg-green-200">05</div>
-      <div class="p-10 bg-green-200">06</div>
+
+    <div class="border m-5 p-5">
+      <div class="w-100 grid grid-cols-3 gap-4 text-center">
+        <div class="p-5 bg-green-200">01</div>
+        <div class="p-5 bg-green-200">02</div>
+        <div class="p-5 bg-green-200">03</div>
+        <div class="p-5 bg-green-200">04</div>
+        <div class="p-5 bg-green-200">05</div>
+        <div class="p-5 bg-green-200">06</div>
+      </div>
     </div>
    
-      <!-- Grid Column Start/End -->
+    <!-- Subgrid Columns -->
+    <p class="text-center">Subgrid Columns</p>
+
+  <div class="border m-5 p-5">
+    <div class="grid grid-cols-4 gap-4 rounded-lg text-center">
+    <div class="rounded-lg bg-indigo-300 p-4 ">01</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">02</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">03</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">04</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">05</div>
+
+    <div class="col-span-3 grid grid-cols-subgrid gap-4">   
+      <div class="rounded-lg col-start-2 bg-pink-500 p-4 ">06</div>  
+    </div>
+  </div>
+  </div>
+
+    <!-- Grid Column Start/End -->
+    <!-- https://tailwindcss.com/docs/grid-column -->
+    <p class="text-center">Spanning Colums</p>
+
+    <div class="border m-5 p-5">
+      <div class="w-100 grid grid-cols-3 gap-4 text-center">
+        <div class="p-5 bg-green-200">01</div>
+        <div class="p-5 bg-green-200 col-span-2">02</div>
+        <div class="p-5 bg-green-200">03</div>
+        <div class="p-5 bg-green-200">04</div>
+        <div class="p-5 bg-green-200 col-span-2">05</div>
+        <div class="p-5 bg-green-200">06</div>
+      </div>
+    </div>
+
+    <p class="text-center">Grid Colums Start/End</p>
+
+    <div class="border m-5 p-5">
+      <div class="w-100 grid grid-cols-6 gap-4 text-center">
+        <div class="p-5 bg-green-200 col-start-2 col-span-4">01</div>
+        <div class="p-5 bg-green-200 col-start-1 col-end-3">02</div>
+        <div class="p-5 bg-green-200 col-end-7 col-span-2">03</div>
+        <div class="p-5 bg-green-200 col-start-1 col-end-7">04</div>
+      </div>
+    </div>
+
+    <!-- Grid Template Rows -->
+    <!-- https://tailwindcss.com/docs/grid-template-rows -->
+    <p class="text-center">Grid Template Rows</p>
+
+    <div class="border m-5 p-5">
+      <div class="grid grid-rows-3 grid-flow-col gap-4 text-center">
+        <div class="p-5 bg-green-200">01</div>
+        <div class="p-5 bg-green-200">02</div>
+        <div class="p-5 bg-green-200">03</div>
+        <div class="p-5 bg-green-200">04</div>
+        <div class="p-5 bg-green-200">05</div>
+        <div class="p-5 bg-green-200">06</div>
+      </div>
+    </div>
+
+    <!-- Subgrid Rows -->
+    <p class="text-center">Subgrid Rows</p>
+
+  <div class="border m-5 p-5">
+    <div class="grid grid-rows-3 grid grid-flow-col gap-4 rounded-lg text-center">
+    <div class="rounded-lg bg-indigo-300 p-4 ">01</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">02</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">03</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">04</div>
+    <div class="rounded-lg bg-indigo-300 p-4 ">05</div>
+
+    <div class="grid grid-rows-subgrid gap-4 row-span-3">   
+      <div class="rounded-lg row-start-2 bg-pink-500 p-4 ">06</div>  
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Spanning Rows -->
+  <p class="text-center">Spanning Rows</p>
+  <div class="border m-5 p-5">
+    <div class="grid grid-rows-3 grid-flow-col gap-4 text-center">
+        <div class="p-5 bg-green-200 row-span-3">01</div>
+        <div class="p-5 bg-green-200 col-span-2">02</div>
+        <div class="p-5 bg-green-200 row-span-2 col-span-2">03</div>
+    </div>
+  </div>
+
+  <!-- Grid Row Start/End -->
+  <!--  https://tailwindcss.com/docs/grid-row-->
+  <p class="text-center">Grid Rows Start/End</p>
+  <div class="border m-5 p-5">
+    <div class="grid grid-rows-3 grid-flow-col gap-4 text-center">
+        <div class="p-5 bg-green-200 row-start-2 row-span-2">01</div>
+        <div class="p-5 bg-green-200 row-end-3 row-span-2">02</div>
+        <div class="p-5 bg-green-200 row-start-1 row-end-4">03</div>
+    </div>
+  </div>
+
+
+  <div class="grid grid-flow-col auto-cols-auto">
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
