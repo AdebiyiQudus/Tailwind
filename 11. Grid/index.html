@@ -120,20 +120,114 @@
     </div>
   </div>
 
+  <!-- Grid Auto Columns -->
+  <p class="bg-indigo-500 text-center">Grid Auto Columns</p>
+  <!--  auto-cols-auto => This allows each column's width to be determined automatically based on the content and available space.  -->
+  <p class="text-center">grid auto columns: auto (auto-cols-auto)</p>
+    <div class="grid grid-flow-col m-3 auto-cols-auto text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
 
-  <div class="grid grid-flow-col auto-cols-auto">
-    <div>01</div>
-    <div>02</div>
-    <div>03</div>
-  </div>
+    <!-- auto-cols-max: This makes each column just wide enough to fit the largest item in that column. -->
+  <p class="text-center">grid auto columns: max (auto-cols-max)</p>
+    <div class="grid grid-flow-col m-3 auto-cols-max text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+    <!-- auto-cols-min: This makes each column as narrow as possible while still fitting the content. -->
+  <p class="text-center">grid auto columns: min (auto-cols-min)</p>
+    <div class="grid grid-flow-col m-3 auto-cols-min text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+    <!--  auto-cols-fr: This set each column to share equal width in the container -->
+  <p class="text-center">grid auto columns: minmax(0, 1fr) => (auto-cols-fr)</p>
+    <div class="grid grid-flow-col m-3 auto-cols-fr text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+      <!-- Grid Auto Columns -->
+  <p class="bg-orange-500 text-center">Grid Auto Rows</p>
+  <!--  auto-rows-auto => This allows each rows width to be determined automatically based on the content and available space.  -->
+  <p class="text-center">grid auto rows: auto (auto-rows-auto)</p>
+    <div class="grid grid-flow-row m-3 auto-rows-auto text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+    <!-- auto-rows-max: This makes each rows just wide enough to fit the largest item in that row. -->
+  <p class="text-center">grid auto rows: max (auto-rows-max)</p>
+    <div class="grid grid-flow-row m-3 auto-rows-max text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tenetur optio! Error minima modi, doloremque labore maiores laudantium atque facilis enim asperiores, architecto, voluptates quod! Quaerat voluptates excepturi minima suscipit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+    <!-- auto-rows-min: This makes each rows as narrow as possible while still fitting the content. -->
+  <p class="text-center">grid auto rows: min (auto-rows-min)</p>
+    <div class="grid grid-flow-row m-3 auto-rows-min text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas quibusdam officia nisi optio totam, similique possimus assumenda recusandae nobis corporis nesciunt numquam autem nemo facilis ipsa vitae tenetur ipsam..</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+    <!--  auto-rows-fr: This makes each rows share width  equally in the container -->
+  <p class="text-center">grid auto rows: minmax(0, 1fr) => (auto-rows-fr)</p>
+    <div class="grid grid-flow-row m-3 auto-rows-fr text-center gap-4">
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="p-5 bg-teal-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
 
 
+    <!-- Grid Auto Rows : This means elements will be placed in rows first, moving horizontally before moving to the next row -->
+    <p class="text-center">grid auto flow: row dense (grid-flow-row-dense)</p>
 
+    <!-- Dense: This makes the grid fill in gaps left by earlier grid items as compactly as possible. -->
+    <div class="border m-5 p-5">
+      <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4 text-center">
+        <div class="p-5 bg-green-200 col-span-2">01</div>
+        <div class="p-5 bg-green-200 col-span-2">02</div>
+        <div class="p-5 bg-green-200">03</div>
+        <div class="p-5 bg-green-200">04</div>
+        <div class="p-5 bg-green-200">05</div>
+      </div>
+    </div>
 
+    <p class="text-center">grid auto flow: col dense (grid-flow-col-dense)</p>
+    <!-- Dense: This makes the grid fill in gaps left by earlier grid items as compactly as possible. -->
+    <div class="border m-5 p-5">
+      <div class="grid grid-flow-col-dense grid-cols-3 grid-rows-3 gap-4 text-center">
+        <div class="p-5 bg-green-200 col-span-2">01</div>
+        <div class="p-5 bg-green-200 col-span-2">02</div>
+        <div class="p-5 bg-green-200">03</div>
+        <div class="p-5 bg-green-200">04</div>
+        <div class="p-5 bg-green-200">05</div>
+      </div>
+    </div>
 
+    <!-- Grid Gap -->
+    <p class="text-center">Grid Gap</p>
 
-
-
+    <div class="border m-5 ">
+      <div class="grid grid-cols-3 gap-x-8 gap-y-4 text-center">
+        <div class="p-5 bg-green-200">01</div>
+        <div class="p-5 bg-green-200">02</div>
+        <div class="p-5 bg-green-200">03</div>
+        <div class="p-5 bg-green-200">04</div>
+        <div class="p-5 bg-green-200">05</div>
+        <div class="p-5 bg-green-200">06</div>
+      </div>
+    </div>
 
 
 
