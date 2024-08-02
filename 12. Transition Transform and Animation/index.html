@@ -29,12 +29,105 @@
 
     <!-- Transition -->
     <!-- 1. https://tailwindcss.com/docs/transition-property -->
-    <!-- 2. https://tailwindcss.com/docs/transition-duration -->
-    <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
-    <!-- 4. https://tailwindcss.com/docs/transition-delay -->
-    <!-- 5. https://tailwindcss.com/docs/animation -->
+    <p class="text-center p-3">TRANSITION PROPERTIES</p>
+    <div class="m-2 text-center pt-5 border-2">transition-colors
 
+    <button class="p-5 m-5 text-white bg-blue-500 hover:bg-blue-700 
+      hover:text-green-900 hover:border-4 border-red-500">
+    Saved Changes
+    </button>
+  </div>
+
+  <div class="m-2 text-center pt-5 border-2">transition-opacity
+    <button class="p-5 m-5 text-white bg-teal-200 opacity:200 hover:opacity-50">
+   Opacity
+    </button>
+  </div>
+
+  <div class="m-2 text-center pt-5 border-2">transition-shadow
+    <button class="p-5 m-5 text-white bg-cyan-500 shadow-md hover:shadow-2xl">
+   Opacity
+    </button>
+  </div>
+
+    <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+    <div class="m-2 text-center pt-5 border-2">transition-duration
+
+      <div class=" rounded-xl overflow-auto p-8">
+        <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white text-sm font-bold leading-6">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 "</p>
+          <button class="px-4 py-2 text-sm bg-violet-500 text-white rounded-md  hover:scale-125  duration-150">Button A</button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">duration-300</p>
+          <button class="px-4 py-2 text-sm bg-violet-500 text-white rounded-md  hover:scale-125  duration-300">Button B</button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">duration-700</p>
+          <button class="px-4 py-2 text-sm bg-violet-500 text-white rounded-md  hover:scale-125  duration-700">Button C</button>
+        </div>
+      </div>
+    </div>
+      </div>
+
+
+    <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+    <!-- ese-linerar : This means the transition progresses at a constant speed.  -->
+    <div class="m-2 text-center pt-5 border-2">transition-timing-function 
+
+    <div class=" rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white text-sm font-bold leading-6">
+      <div class="flex flex-col items-center shrink-0">
+        <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">ease-in</p>
+        <button class="px-4 py-2 text-sm bg-teal-500 text-white rounded-md  hover:scale-125 ease-in duration-300 ">Button A</button>
+      </div>
+      <div class="flex flex-col items-center shrink-0">
+        <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">ease-out</p>
+        <button class="px-4 py-2 text-sm bg-teal-500 text-white rounded-md  hover:scale-125 ease-out duration-300">Button B</button>
+      </div>
+      <div class="flex flex-col items-center shrink-0">
+        <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">ease-in-out</p>
+        <button class="px-4 py-2 text-sm bg-teal-500 text-white rounded-md  hover:scale-125 ease-in-out duration-300">Button C</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+    <div class="m-2 text-center pt-5 border-2">transition-delay 
+
+      <div class=" rounded-xl overflow-auto p-8">
+        <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white text-sm font-bold leading-6">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">delay-150</p>
+          <button class="px-4 py-2 text-sm bg-cyan-500 text-white rounded-md  hover:scale-125 delay-150 ">Button A</button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">delay-300</p>
+          <button class="px-4 py-2 text-sm bg-cyan-500 text-white rounded-md  hover:scale-125 delay-300 duration-300">Button B</button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 ">delay-700</p>
+          <button class="px-4 py-2 text-sm bg-cyan-500 text-white rounded-md  hover:scale-125 delay-700 duration-300">Button C</button>
+        </div>
+      </div>
+    </div>
+      </div>
+
+
+    <!-- 5. https://tailwindcss.com/docs/animation -->
+    <p class="text-center p-3">ANIMATION</p>
+    <div class="flex justify-center">
+      <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-spin">Spin</div>
+      <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-ping">Ping</div>
+      <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-pulse">Pulse</div>
+      <div class="p-20 ml-20 mt-20 w-20 bg-teal-200 animate-bounce">
+        Bounce
+      </div>
+    </div>
 
     <!-- Transform -->
+    
   </body>
 </html>
