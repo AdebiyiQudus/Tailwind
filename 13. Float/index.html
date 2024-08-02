@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Floats</title>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="container mx-auto space-y-6">
+      <div class="bg-white p-4 shadow-md">
+          <div class="float-left w-1/4 bg-blue-500 text-white p-2">Float Left</div>
+          <p class="p-2">This text wraps around the floated left element. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae elit feugiat egestas.</p>
+          <div class="clear-left"></div>
+      </div>
+
+      <div class="bg-white p-4 shadow-md">
+          <div class="float-right w-1/4 bg-green-500 text-white p-2">Float Right</div>
+          <p class="p-2">This text wraps around the floated right element. Lorem ipsum 
+          dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae elit feugiat egestas.</p>
+          <div class="clear-right"></div>
+      </div>
+
+      <div class="bg-white p-4 shadow-md">
+          <div class="float-none w-1/4 bg-red-500 text-white p-2">Float None</div>
+          <p class="p-2">This text does not wrap around the element since it has float-none. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae elit feugiat egestas.</p>
+      </div>
+
+      <div class="bg-white p-4 shadow-md">     
+          <div class="float-start w-1/4 bg-purple-500 text-white p-2">Float Start</div>
+          <p class="p-2">This text wraps around the floated start element. In a left-to-right layout, 
+          it behaves like float-left. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae elit feugiat egestas.</p>
+          <div class="clear-start"></div>
+      </div>
+
+      <div class="bg-white p-4 shadow-md">
+          <div class="float-end w-1/4 bg-yellow-500 text-white p-2">Float End</div>
+          <p class="p-2">This text wraps around the floated end element. In a left-to-right layout, 
+        it behaves like float-right. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae elit feugiat egestas.</p>
+          <div class="clear-end"></div>
+      </div>
+
+      <div class="bg-white p-4 shadow-md">
+          <div class="float-left w-1/4 bg-blue-500 text-white p-2">Float Left</div>
+          <div class="float-right w-1/4 bg-green-500 text-white p-2">Float Right</div>
+          <div class="clear-both p-2">
+              <p>This text is below both floated elements because of clear-both. Lorem ipsum dolor sit amet,
+           consectetur adipiscing elit. Nullam non urna vitae elit feugiat egestas.</p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
