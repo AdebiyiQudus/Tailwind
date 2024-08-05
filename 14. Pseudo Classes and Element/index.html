@@ -21,6 +21,15 @@
     input:invalid {
       border: 2px solid red;
     }
+
+    p:not(.exclude) {
+      color: blue;
+    }
+
+    li:not(:first-child) {
+      background-color: lightgray;
+    }
+    
     </style>
 
     <!-- Pseudo Classes -->
@@ -51,9 +60,15 @@
       <input type="submit" value="Submit">
     </form>
 
+    <p>This paragraph will be blue.</p>
+    <p class="exclude">This paragraph will not be blue.</p>
+    <p>New paragraph </p>
 
-
-
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
 
 
 
