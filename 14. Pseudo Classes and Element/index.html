@@ -7,27 +7,84 @@
   </head>
   <body>
     <style>
-      /* input:required {
+      :root {
+        --main-bg-color: lightblue;
+        --main-text-color: darkblue;
+        --padding: 10px;
+      }
+
+      body {
+        background-color: var(--main-bg-color);
+        color: var(--main-text-color);
+        padding: var(--padding);
+      }
+
+      h1 {
+        color: var(--main-text-color);
+      }
+
+      p {
+        padding: var(--padding);
+      }
+
+    /* :required and invalid works the same */
+      input:required {
         border: 2px solid red;
       }
 
+    /* :optional and :valid works the same */
       input:optional {
         border: 2px solid green;
-      } */
+      }
 
       input:valid {
-      border: 2px solid green;
-    }
-    input:invalid {
-      border: 2px solid red;
-    }
+        border: 2px solid green;
+      }
+      input:invalid {
+        border: 2px solid red;
+      }
 
-    p:not(.exclude) {
-      color: blue;
-    }
+      p:not(.exclude) {
+        color: blue;
+      }
 
-    li:not(:first-child) {
-      background-color: lightgray;
+      li:not(:first-child) {
+        background-color: lightgray;
+      }
+
+      ol {
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 20px;
+        padding: 0;
+      }
+
+      ol li {
+        margin: 10px 0;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      ul {
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 20px;
+        padding: 0;
+        list-style-type: square; /* Change bullet style */
+      }
+
+      ul li {
+        margin: 10px 0;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+
+      p::selection {
+      background: #b7e1ff;
+      color: #000;
     }
     
     </style>
@@ -40,7 +97,7 @@
       <input type="text" id="name" name="name" required />
       <input type="submit" value="Submit" />
     </form>
-    
+
     <h3>:optional</h3>
     <form>
       <label for="email">Email (optional):</label>
@@ -51,18 +108,19 @@
     <h3>:valid and :invalid</h3>
     <form>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <br>
+      <input type="email" id="email" name="email" required />
+      <br />
       <label for="age">Age (between 18 and 99):</label>
-      
-      <input type="number" id="age" name="age" min="18" max="99" required>
-      <br>
-      <input type="submit" value="Submit">
+
+      <input type="number" id="age" name="age" min="18" max="99" required />
+      <br />
+      <input type="submit" value="Submit" />
     </form>
 
+    <h3>:not</h3>
     <p>This paragraph will be blue.</p>
     <p class="exclude">This paragraph will not be blue.</p>
-    <p>New paragraph </p>
+    <p>New paragraph</p>
 
     <ul>
       <li>First item</li>
@@ -70,14 +128,21 @@
       <li>Third item</li>
     </ul>
 
+    <h3>Ordered list item styling</h3>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
 
+    <h3>Hello, World!</h3>
+    <p>
+      This is an example of using the :root pseudo-class with CSS variables.
+    </p>
 
-
-
-
-
-
-
-
+    <h1>Pseudo Element</h1>
+    <h3>::selection</h3>
+  <p>This paragraph has custom selection styling.</p>
+  <p>This paragraph does not have custom selection styling.</p>
   </body>
 </html>
